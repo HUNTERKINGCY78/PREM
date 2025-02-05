@@ -47,6 +47,8 @@ read -p "silahkan pilih angka di atas: " apa
 
 if [ "$apa" = "1" ]; then
 $e "tools prem ini akan di upgrade 😄"
+mpv robot.mp3
+sleep 2
 mpv klik.mp3
 apt update && apt upgrade
  apt install nodejs git
@@ -73,6 +75,7 @@ exit 0
 #else ini adalah kondisi jika menu / input yang di masukkan salah
 
 else
+mpv salah.mp3
 $e "maap input yang anda masukkan salah,silahkan ulang i lagi !"
 sleep 5
 
