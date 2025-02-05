@@ -1,15 +1,31 @@
 clear 
 e="echo -e"
 clear
+$e "=================================="
+$e "= INSTALL DULU CUY BIR GAK ERROR ="
+$e "==================================
+pkg update && pkg upgrade
+pkg install mpv
+cd
+rm -rf PREM
+git clone https://github.com/HUNTERKINGCY78/PREM
+cd PREM
+chmod +x bot
+bash bot.sh
+sleep 2
+
+clear
 $e "========================"
 $e "= TOOLS SPAM PREM 2025=="
-$e "========================
+$e "========================"
 
 read -p "username: " apa
 read -p "password: " mana
 
 if [ "$apa" = "hozoo" ] && [ "$mana" = "123456" ]; then
 clear
+mpv b.mp3
+sleep 3
 $e "Selamat Anda Telah viip tools "
 sleep 4
 else 
@@ -19,8 +35,7 @@ exit 0
 fi
 
 
-while true; do #input pengulangan
-#ini adalah tampilan
+
 clear
 $e "1.menu spam pair wa"
 $e "0.exit"
@@ -32,6 +47,7 @@ read -p "silahkan pilih angka di atas: " apa
 
 if [ "$apa" = "1" ]; then
 $e "tools prem ini akan di upgrade 😄"
+mpv hozoo.mp3
 apt update && apt upgrade
  apt install nodejs git
 git clone https://github.com/ZeltNamizake/spcwa
@@ -61,7 +77,8 @@ $e "maap input yang anda masukkan salah,silahkan ulang i lagi !"
 sleep 5
 
 fi
-done #input penutupan while (input pengulangan)
+
+
 
 
 
