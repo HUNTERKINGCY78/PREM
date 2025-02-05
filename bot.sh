@@ -24,7 +24,7 @@ read -p "password: " mana
 
 if [ "$apa" = "hozoo" ] && [ "$mana" = "123456" ]; then
 clear
-mpv b.mp3
+mpv klik.mp3
 sleep 3
 $e "Selamat Anda Telah viip tools "
 sleep 4
@@ -47,7 +47,7 @@ read -p "silahkan pilih angka di atas: " apa
 
 if [ "$apa" = "1" ]; then
 $e "tools prem ini akan di upgrade 😄"
-mpv hozoo.mp3
+mpv klik.mp3
 apt update && apt upgrade
  apt install nodejs git
 git clone https://github.com/ZeltNamizake/spcwa
