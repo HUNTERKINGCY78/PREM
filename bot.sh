@@ -1,9 +1,7 @@
 clear 
 e="echo -e"
-clear
-$e "=================================="
-$e "= INSTALL DULU CUY BIR GAK ERROR ="
-$e "==================================
+
+
 pkg update && pkg upgrade
 pkg install mpv
 cd
@@ -14,40 +12,22 @@ chmod +x bot
 bash bot.sh
 sleep 2
 
-clear
-$e "========================"
-$e "= TOOLS SPAM PREM 2025=="
-$e "========================"
+#!/bin/bash
 
-read -p "username: " apa
-read -p "password: " mana
+while true; do
+    clear
+    echo "==== MENU TOOLS ===="
+    echo "1. SPAM PAIR WA"
+    echo "2. Lihat disk usage"
+    echo "3. Tampilkan tanggal & waktu"
+    echo "4. Keluar"
+    echo "===================="
+    
+    read -p "Pilih menu [1-4]: " pilihan
 
-if [ "$apa" = "hozoo" ] && [ "$mana" = "123456" ]; then
-clear
-mpv klik.mp3
-sleep 3
-$e "Selamat Anda Telah viip tools "
-sleep 4
-else 
-$e "maaf anda belum beli vipp "
-sleep 4
-exit 0
-fi
-
-
-
-clear
-$e "1.menu spam pair wa"
-$e "0.exit"
-
-#input pertanyaan
-read -p "silahkan pilih angka di atas: " apa
-
-#input menu
-
-if [ "$apa" = "1" ]; then
-$e "tools prem ini akan di upgrade 😄"
-mpv robot.mp3
+    case $pilihan in
+        1)
+            mpv robot.mp3
 sleep 2
 mpv klik.mp3
 apt update && apt upgrade
@@ -60,26 +40,40 @@ npm install @wasm-audio-decoders
 npm install @tokenizer/token
 npm install 
 npm start
-sleep 2
-elif [ "$apa" = "2" ]; then
-$e "ini adalah menu ke dua"
-sleep 5 
-elif [ "$apa" = "3" ]; then
-$e "ini adalah menu ke tiga"
-sleep 5 
-elif [ "$apa" = "0" ]; then
-$e "anda memilih keluar semoga harimu menyenagkan"
-sleep 5 #sleep ini adalah code jeda
-exit 0
+            ;;
+        2)
+            echo "Informasi penggunaan disk:"
+            df -h
+            ;;
+        3)
+            echo "Tanggal & Waktu saat ini:"
+            date
+            ;;
+        4)
+            echo "Keluar dari program..."
+            exit 0
+            ;;
+        *)
+            echo "Pilihan tidak valid!"
+            ;;
+    esac
 
-#else ini adalah kondisi jika menu / input yang di masukkan salah
+    read -p "Tekan Enter untuk kembali ke menu..."
+done
 
-else
-mpv salah.mp3
-$e "maap input yang anda masukkan salah,silahkan ulang i lagi !"
-sleep 5
 
-fi
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
